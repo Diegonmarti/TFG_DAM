@@ -3,7 +3,6 @@ Este es el proyecto de fin de grado de DAM. -->    https://diegonmarti.github.io
 
 "Mi-Mascota Perruna" es un proyecto fin de grado que nace con el objetivo de desarrollar un espacio donde conectar a dueños de perros con cuidadores de perros, mostrar sus servicios y
 contenidos y dar visibilidad y respuesta a una necesidad actual en nuestra sociedad. 
-![perro2](https://github.com/Diegonmarti/TFG_DAM/assets/98549170/9a92d470-0abc-438e-96ce-ca4844178099)
 
 El proyecto se divide en dos partes. Por un lado, una página web funcional, intuitiva y moderna donde se puede consultar información sobre los servicios que ofrece, opiniones de usuarios,
 calculadora de ubicación y una opción para registrarse o identificarse. Por otro lado, una aplicación móvil Android que ayuda al usuario a contactar y reservar el cuidador ideal para su
@@ -15,3 +14,4 @@ El siguiente enlace te llevará a la rama documentación donde podrás encontrar
 
 https://github.com/Diegonmarti/TFG_DAM/assets/98549170/3c2c9c86-fe48-40e5-9647-ac45b51ff693
 
+![perro2](https://github.com/Diegonmarti/TFG_DAM/assets/98549170/9a92d470-0abc-438e-96ce-ca4844178099)
