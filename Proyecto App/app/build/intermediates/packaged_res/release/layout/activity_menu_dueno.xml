@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu_dueno">
+
+    <Button
+        android:id="@+id/casa"
+        android:layout_width="130dp"
+        android:layout_height="84dp"
+        android:onClick="casa"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/listado"/>
+
+    <Button
+        android:id="@+id/listado"
+        android:layout_width="144dp"
+        android:layout_height="90dp"
+        android:background="@android:color/transparent"
+        android:onClick="lista"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/casa"
+        app:layout_constraintEnd_toStartOf="@id/perfil"/>
+
+    <Button
+        android:id="@+id/perfil"
+        android:layout_width="133dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@android:color/transparent"
+        android:onClick="perfil"
+        app:layout_constraintStart_toEndOf="@+id/listado" />
+
+    <Button
+        android:id="@+id/idioma"
+        android:layout_width="93dp"
+        android:layout_height="86dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/transparent"
+        android:onClick="idioma" />
+
+    <Button
+        android:id="@+id/volver"
+        android:layout_width="0dp"
+        android:layout_height="86dp"
+        android:onClick="btnvolver"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="440dp"
+        tools:layout_editor_absoluteY="753dp" />
+
+
+    <ImageView
+        android:id="@+id/imagenmenu"
+        android:layout_width="635dp"
+        android:layout_height="765dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.625"
+        app:srcCompat="@drawable/recordatorio" />
+
+    <ImageView
+        android:id="@+id/fotoreserva"
+        android:layout_width="143dp"
+        android:layout_height="143dp"
+        android:layout_alignStart="@id/imagenmenu"
+        android:layout_alignTop="@id/imagenmenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.353"
+        android:background="@android:color/holo_purple"
+        android:padding="2dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/datosreserva"
+        android:layout_width="232dp"
+        android:layout_height="118dp"
+        android:layout_alignTop="@id/imagenmenu"
+        android:layout_alignEnd="@id/imagenmenu"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.614" />
+
+    <TextView
+        android:id="@+id/emaildueno"
+        android:layout_width="65dp"
+        android:layout_height="26dp"
+        android:layout_alignTop="@id/imagenmenu"
+        android:layout_alignEnd="@id/imagenmenu"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.873" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

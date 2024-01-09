@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="prefix_options">
+        <item>+34</item>
+        <item>+68</item>
+        <item>+48</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="ic_icono_launcher_background">#BB88E2</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="rojopaleta">#ff6961</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="verdeclarito">#A9ECA2</color>
+    <color name="verdepaleta">#618E3C</color>
+    <color name="white">#FFFFFFFF</color>
+    <item name="reset_password_image" type="id"/>
+    <item name="reset_password_title" type="id"/>
+    <string name="Cuidadores"/>
+    <string name="MenuDueno"/>
+    <string name="ResetearContraseña">Resetear Contraseña</string>
+    <string name="app_name">M-MP</string>
+    <string name="close_button_content_description"/>
+    <string name="contrase_a">Contraseña</string>
+    <string name="default_web_client_id" translatable="false">796763331783-78ps5cfmvencc7ua739snh9jjr9o7mfj.apps.googleusercontent.com</string>
+    <string name="email">Email</string>
+    <string name="gcm_defaultSenderId" translatable="false">796763331783</string>
+    <string name="google_api_key" translatable="false">AIzaSyCT9Hj790WvOYbOrzl8ICaXTQySGwsnBsA</string>
+    <string name="google_app_id" translatable="false">1:796763331783:android:5a415273c85c31ab66b2e2</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCT9Hj790WvOYbOrzl8ICaXTQySGwsnBsA</string>
+    <string name="google_storage_bucket" translatable="false">perruna-cd211.appspot.com</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="olvidaste_la_contrase_a">¿Olvidaste la contraseña?</string>
+    <string name="password_reset_description"/>
+    <string name="password_reset_title"/>
+    <string name="project_id" translatable="false">perruna-cd211</string>
+    <style name="Theme.Proyecto" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+    </style>
+</resources>

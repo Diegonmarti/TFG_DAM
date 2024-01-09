@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">796763331783-78ps5cfmvencc7ua739snh9jjr9o7mfj.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">796763331783</string>
+    <string name="google_api_key" translatable="false">AIzaSyCT9Hj790WvOYbOrzl8ICaXTQySGwsnBsA</string>
+    <string name="google_app_id" translatable="false">1:796763331783:android:5a415273c85c31ab66b2e2</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCT9Hj790WvOYbOrzl8ICaXTQySGwsnBsA</string>
+    <string name="google_storage_bucket" translatable="false">perruna-cd211.appspot.com</string>
+    <string name="project_id" translatable="false">perruna-cd211</string>
+</resources>
