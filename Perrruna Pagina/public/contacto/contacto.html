@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ficha de la aplicación DoggieApp</title>
+  <link rel="stylesheet" href="../contacto/contacto.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4023386448583496" crossorigin="anonymous"></script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RHB6WS2L9H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RHB6WS2L9H');
+</script>
+<!--Facebook pixel-->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1316463905573215');
+  fbq('track', 'PageView');
+</script>
+
+</head>
+<body>
+  <header id="header">
+    <div class="wrap">
+      <div id="logo" style="text-align: center;">
+        <a href="../inicio/pagina.html"><img src="../fotos/perro.png" width="52" height="52" style="margin: 0 auto;"></a>
+      </div>
+
+      <nav id="menu">
+        <ul>
+          <li><a href="../inicio/pagina.html">Inicio</a></li>
+          <li><a href="../cuidadores/cuidadores.html">Cuidadores</a></li>
+          <li><a href="../servicios/servicios.html">Servicios</a></li>
+          <li><a href="../ubicacion/mapa.html">Ubicacion</a></li>
+          <li><a href="../contacto/contacto.html">Contacto</a></li>
+          <li class="cerrar"><a href="../login/Login.html"><img src="../fotos/user.png" width="52" height="52" style="margin: 0 auto;"></a></li>              
+        </ul>
+      </nav>
+    </div> 
+   </header>
+   <center><h1>Contacto de Mi-Mascota Perruna</h1></center>
+   <div class="container">
+     <div class="card2">
+      <div id="map"></div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+       <div class="formulario-contacto">
+         <form action="#" method="post">
+           <center><h2>Contacto</h2></center>
+ 
+           <label for="nombre">Nombre:</label>
+           <input type="text" id="nombre" name="nombre" required>
+ 
+           <label for="email">Email:</label>
+           <input type="email" id="email" name="email" required>
+ 
+           <label for="mensaje">Mensaje:</label>
+           <textarea id="mensaje" name="mensaje" required></textarea>
+ 
+           <input type="submit" value="Enviar" onclick="enviarFormulario()">
+         </form>
+       </div>
+     </div>
+
+    <div class="card">
+      <div class="ficha-app article-asset-normal">
+        <div class="ficha-app-image">
+          <img src="../fotos/perro2.png" alt="DoggieApp">
+        </div>
+        <div class="ficha-app-description">
+          <h3 class="ficha-app-name">Mi-Mascota Perruna</h3>
+          <p data-mrf-recirculation="Article links">¡Descubre el compañero perfecto para tu perro! DoggieApp ofrece una amplia gama de servicios y consejos para el cuidado y entretenimiento de tu mascota. ¡Explora nuestras funciones y haz que tu perro sea el más feliz!</p>
+        </div>
+        <div class="ficha-app-buttons">
+          <a href="https://play.google.com/store/apps/details?id=doggieapp.android" class="btn-googleplay-app" target="_blank">Descargar gratis (Android)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
+<script src="../contacto/contacto.js"></script>
+</html>

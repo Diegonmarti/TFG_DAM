@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Perruna</title>
+        <link rel="stylesheet" href="../login/login.css">
+        <link rel="icon" href="../fotos/perro2.png">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+      
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyA_SM6d1nCztP2JON5DHytWOOWs7Jl_Ff4",
+            authDomain: "perruna-cd211.firebaseapp.com",
+            projectId: "perruna-cd211",
+            storageBucket: "perruna-cd211.appspot.com",
+            messagingSenderId: "796763331783",
+            appId: "1:796763331783:web:2fd75de7e305206f66b2e2",
+            measurementId: "G-RHB6WS2L9H"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RHB6WS2L9H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RHB6WS2L9H');
+</script>
+</head>
+
+<div class="popup" id="popup">
+  <div class="popup-container">
+    <button class="close-btn" id="close-btn">&times;</button>
+    <h2 class="popup-title">Bienvenido a Mi-Mascota</h2>
+    <h2 class="popup-title">Perruna</h2>
+
+    <br>
+    <center><p>Gracias por visitar nuestra página.</p></center>
+    <br>
+    <button class="popup-btn" id="popup-btn" disabled>Aceptar</button>
+    <br>
+    <center><label for="accept-terms">
+        <input type="checkbox" id="accept-terms" name="accept-terms"> Acepto los <a href="../condiciones/condiciones.pdf" target="_blank">términos y condiciones</a>
+    </label></center>
+  </div>
+</div>
+
+
+
+<header id="header">
+  <div class="wrap">
+    <div id="logo" style="text-align: center;">
+      <a href="../inicio/pagina.html"><img src="../fotos/perro.png" width="52" height="52" style="margin: 0 auto;"></a>
+    </div>
+
+    <nav id="menu">
+      
+      <ul>
+        <li><a href="../inicio/pagina.html">Inicio</a></li>
+        <li><a href="../cuidadores/cuidadores.html">Cuidadores</a></li>
+        <li><a href="../servicios/servicios.html">Servicios</a></li>
+        <li><a href="../ubicacion/mapa.html">Ubicacion</a></li>
+        <li><a href="../contacto/contacto.html">Contacto</a></li>
+        <li class="cerrar"><a href="../login/Login.html"><img src="../fotos/user.png" width="52" height="52" style="margin: 0 auto;"></a></li>              
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="container right-panel-active">
+<!-- Sign Up -->
+<div class="container__form container--signup">
+<form action="#" class="form" id="form1">
+  <h2 class="form__title">REGISTRARSE</h2>
+  <input type="text" placeholder="User" class="input" />
+  <input type="email" placeholder="Email" class="input" />
+  <input type="password" placeholder="Password" class="input" />
+  <div>
+    <input type="checkbox" id="checkbox1" />
+    <center><label for="checkbox1">Cuidador</label></center>
+  </div>
+  <div>
+    <input type="checkbox" id="checkbox2" />
+    <center><label for="checkbox2">Dueño</label></center>
+  </div>
+  <button class="btn">REGISTRARSE</button>
+</form>
+</div>
+
+<!-- Sign In -->
+<div class="container__form container--signin">
+<form action="#" class="form" id="form2">
+  <h2 class="form__title">LOGUEARSE</h2>
+  <input type="email" placeholder="Email" class="input" id="email" />
+  <input type="password" placeholder="Password" class="input" id="password" />
+  <button class="btn" onclick="ingresar(event)">INICIAR</button>
+</form>
+</div>
+
+
+  <!-- Overlay -->
+  <div class="container__overlay">
+    <div class="overlay">
+      <div class="overlay__panel overlay--left">
+        <button class="btn" id="signIn">INICIAR SESIÓN</button>
+      </div>
+      <div class="overlay__panel overlay--right">
+        <button class="btn" id="signUp">REGISTRARSE</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4023386448583496" crossorigin="anonymous"></script>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-format="fluid"
+           data-ad-layout-key="-fb+5w+4e-db+86"
+           data-ad-client="ca-pub-4023386448583496"
+           data-ad-slot="2177092617"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+
+      </main>
+      <footer>
+        <center><h1>Cuidadores Perrunos</h1></center>
+        <center><p>Estos son varios de los cuidadores que están en nuestra aplicación registrados para realizar los servicios.</p></center>
+        <div class="contenedor">
+          <div class="box" id="box">
+            <div class="elementos">
+              <div class="imagenes">
+                <a href="../cuidadores/cuidadores.html">
+                  <img src="../fotos/cuidador1.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="elementos">
+              <div class="imagenes">
+                <a href="../cuidadores/cuidadores.html">
+                  <img src="../fotos/cuidador2.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="elementos">
+              <div class="imagenes">
+                <a href="../cuidadores/cuidadores.html">
+                  <img src="../fotos/cuidador3.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="elementos">
+              <div class="imagenes">
+                <a href="../cuidadores/cuidadores.html">
+                  <img src="../fotos/cuidador4.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="elementos">
+              <div class="imagenes">
+                <a href="../cuidadores/cuidadores.html">
+                  <img src="../fotos/cuidador5.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="elementos">
+              <div class="imagenes">
+                <a href="../cuidadores/cuidadores.html">
+                  <img src="../fotos/cuidador6.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="elementos">
+              <div class="imagenes">
+                <a href="../cuidadores/cuidadores.html">
+                  <img src="../fotos/cuidador7.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="elementos">
+              <div class="imagenes">
+                <a href="../cuidadores/cuidadores.html">
+                  <img src="../fotos/cuidador8.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="piso flex">
+              <div class="titulo flex">
+                <p>MI-MASCOTA</p>
+                <p>PERRUNA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrap">
+          <p>Copyright Diego © 2023</p>
+        </div>
+      </footer>
+</body>
+<script src="../login/login.js"></script>
+</html>

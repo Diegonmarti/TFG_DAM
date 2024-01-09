@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="../ubicacion/mapa.css" />
+  <title>Menu y Contenido</title>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js?id=ca-pub-4023386448583496"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RHB6WS2L9H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RHB6WS2L9H');
+</script>
+</head>
+<body>
+  <header id="header">
+    <div class="wrap">
+      <div id="logo" style="text-align: center;">
+        <a href="../inicio/pagina.html"><img src="../fotos/perro.png" width="52" height="52" style="margin: 0 auto;"></a>
+      </div>
+      <nav id="menu">
+        <ul>
+          <li><a href="../inicio/pagina.html">Inicio</a></li>
+          <li><a href="../cuidadores/cuidadores.html">Cuidadores</a></li>
+          <li><a href="../servicios/servicios.html">Servicios</a></li>
+          <li><a href="../ubicacion/mapa.html">Ubicacion</a></li>
+          <li><a href="../contacto/contacto.html">Contacto</a></li>
+          <li class="cerrar"><a href="../login/Login.html"><img src="../fotos/user.png" width="52" height="52" style="margin: 0 auto;"></a></li>              
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="wrap">
+    <section id="Inicio">
+      <div class="container">
+        <center>
+          <label for="street" class="separacion">Introduce una calle:</label>
+          <input type="text" id="street" name="street">
+          <button id="showMapButton" style="margin-right: 10px;">Mostrar mapa</button>
+          <button id="myLocationButton" style="margin-left: 10px; margin-top: 5px;">Mi ubicación</button><br>
+          <div id="mapContainer" style="width: 100%; height: 400px;"></div>
+          <div id="coordinates"></div>
+          <div id="distance"></div>
+          <button id="resetPageButton" style="margin-top: 35px;">Resetear página</button>
+        </center>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="../ubicacion/mapa.js"></script>
+</body>
+</html>
