@@ -13,4 +13,4 @@ extensiones de Google para depurar la página web, herramientas de Firebase y ap
 
 https://github.com/Diegonmarti/TFG_DAM/assets/98549170/3c2c9c86-fe48-40e5-9647-ac45b51ff693
 
-https://github.com/Diegonmarti/TFG_DAM/assets/98549170/ddc9c761-12e4-49b5-aa76-c860ccda1377
+![perro2](https://github.com/Diegonmarti/TFG_DAM/assets/98549170/9a92d470-0abc-438e-96ce-ca4844178099)
