@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Perruna</title>
+        <link rel="stylesheet" href="../registrar/registrar.css">
+        <link rel="icon" href="../fotos/perro2.png">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+      
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyA_SM6d1nCztP2JON5DHytWOOWs7Jl_Ff4",
+            authDomain: "perruna-cd211.firebaseapp.com",
+            projectId: "perruna-cd211",
+            storageBucket: "perruna-cd211.appspot.com",
+            messagingSenderId: "796763331783",
+            appId: "1:796763331783:web:2fd75de7e305206f66b2e2",
+            measurementId: "G-RHB6WS2L9H"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RHB6WS2L9H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RHB6WS2L9H');
+</script>
+</head>
+  
+<!--Facebook pixel-->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1316463905573215');
+    fbq('track', 'PageView');
+  </script>
+
+<body>
+    <header id="header">
+        <div class="wrap">
+          <div id="logo" style="text-align: center;">
+            <a href="../inicio/pagina.html"><img src="../fotos/perro.png" width="52" height="52" style="margin: 0 auto;"></a>
+          </div>
+          <nav id="menu">
+            <ul>
+              <li class="cerrar"><a href="../login/Login.html"><img src="../fotos/user.png" width="52" height="52" style="margin: 0 auto;"></a></li>              
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <main class="wrap">
+        <section id="Inicio">
+            <div id="register">
+                <h2>Registro de usuarios</h2>
+                <div class="form-control">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Ingrese email" required>
+                </div>
+                <div class="form-control">
+                    <label for="usuario">Usuario:</label>
+                    <input type="usuario" id="usuario" placeholder="Ingrese usuario" required>
+                </div>
+                <div class="form-control">
+                    <label for="numero">Número de Teléfono:</label>
+                    <input type="numero" id="numero" placeholder="Ingrese numero de teléfono" required>
+                </div>
+                <div class="form-control">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="contrasena" id="contrasena" placeholder="Ingrese contraseña" required>
+                </div>
+                <div class="form-control">
+                    <label for="repcontraseña">Repetir Contraseña:</label>
+                    <input type="repcontrasena" id="repcontraseña" placeholder="Ingrese contraseña de nuevo" required>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LeClW0lAAAAADVU5RheMMaBcNFAMhU7HiGVR56w"></div>
+                <button onclick="registrar()">Registrar</button>
+            </div>
+        </section>
+</body>
+<script src="../registrar/registrar.js"></script>
+</html>

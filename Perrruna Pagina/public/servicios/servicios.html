@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Perruna</title>
+        <link rel="stylesheet" href="../servicios/servicios.css">
+        <link rel="icon" href="../fotos/perro2.png">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+      
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyA_SM6d1nCztP2JON5DHytWOOWs7Jl_Ff4",
+            authDomain: "perruna-cd211.firebaseapp.com",
+            projectId: "perruna-cd211",
+            storageBucket: "perruna-cd211.appspot.com",
+            messagingSenderId: "796763331783",
+            appId: "1:796763331783:web:2fd75de7e305206f66b2e2",
+            measurementId: "G-RHB6WS2L9H"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RHB6WS2L9H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RHB6WS2L9H');
+</script>
+</head>
+
+  
+<body>
+    <header id="header">
+        <div class="wrap">
+          <div id="logo" style="text-align: center;">
+            <a href="../inicio/pagina.html"><img src="../fotos/perro.png" width="52" height="52" style="margin: 0 auto;"></a>
+          </div>
+          <nav id="menu">
+            <ul>
+                <li class="switch-container">
+                    <label class="switch">
+                      <input type="checkbox" id="dark-mode-toggle">
+                      <span class="slider"></span>
+                    </label>
+                  </li>
+              <li><a href="../inicio/pagina.html">Inicio</a></li>
+              <li><a href="../cuidadores/cuidadores.html">Cuidadores</a></li>
+              <li><a href="../servicios/servicios.html">Servicios</a></li>
+              <li><a href="../ubicacion/mapa.html">Ubicacion</a></li>
+              <li><a href="../contacto/contacto.html">Contacto</a></li>
+              <li class="cerrar"><a href="../login/Login.html"><img src="../fotos/user.png" width="52" height="52" style="margin: 0 auto;"></a></li>              
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <article>
+      <section class="card">
+        <div class="text-content">
+          <h3>PELUQUERÍA</h3>
+          <p>Si contratas a un cuidador a través de la aplicación, tendrás la opción de que lleve a tu perro a la peluquería.
+           El cuidador se encargará de todo, lo que significa que no tendrás que preocuparte por hacer tiempo en tu agenda para llevar a tu perro a la peluquería y recogerlo después.
+           Además, los cuidadores están capacitados para reconocer los signos de incomodidad o estrés en tu perro durante el proceso de la peluquería y podrán comunicarse con el peluquero para asegurarse de que tu perro esté cómodo y seguro. 
+        </div>
+        <div class="visual">
+          <img src="../fotos/peluqueria.png" alt="" />
+        </div>
+      </section> 
+    
+      <section class="card">
+        <div class="text-content">
+          <h3>PASEANTE</h3>
+          <p>Si no tienes tiempo para sacar a tu perro a pasear todos los días, un cuidador puede hacerlo por ti. Los cuidadores se asegurarán de que tu perro tenga suficiente ejercicio y esté bien atendido mientras tú estás ocupado. También pueden mantenerse en contacto contigo y enviarte actualizaciones y fotos de tu perro durante su paseo.</p>  
+        </div>
+        <div class="visual">
+          <img src="../fotos/paseante.png" alt="" />
+        </div>
+      </section> 
+    
+      <section class="card">
+        <div class="text-content">
+          <h3>24 HORAS</h3>
+          <p>Si no quieres dejar a tu perro solo en casa durante todo el día, un cuidador puede quedarse en tu hogar y cuidar a tu perro. Esto significa que tu perro tendrá compañía y atención constante mientras tú estás fuera, y no tendrás que preocuparte por su seguridad y bienestar.</p>  
+        </div>
+        <div class="visual">
+          <img src="../fotos/perro24horas.png" alt="" />
+        </div>
+      </section> 
+    
+      <section class="card">
+        <div class="text-content">
+          <h3>VETERINARIO</h3>
+          <p>Si no puedes llevar a tu perro al veterinario por tu cuenta debido a tus horarios ocupados, un cuidador puede hacerlo por ti. Los cuidadores pueden llevar a tu perro a la clínica veterinaria y asegurarse de que tu perro esté cómodo y seguro durante su visita. También pueden tomar notas sobre cualquier recomendación del veterinario y asegurarse de que sigas las instrucciones de atención adecuada en casa.</p>  
+        </div>
+        <div class="visual">
+          <img src="../fotos/veterinario.png" alt="" />
+        </div>
+      </section> 
+    </article>
+</body>
+
+<script src="../servicios/servicios.js"></script>
+</html>

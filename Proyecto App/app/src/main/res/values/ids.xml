@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="reset_password_image" type="id" />
+    <item name="reset_password_title" type="id" />
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">M-MP</string>
+    <string name="close_button_content_description" />
+    <string name="ResetearContraseña">Resetear Contraseña</string>
+    <string name="password_reset_title" />
+    <string name="password_reset_description" />
+    <string name="email">Email</string>
+    <string name="olvidaste_la_contrase_a">¿Olvidaste la contraseña?</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="Cuidadores" />
+    <string name="MenuDueno" />
+    <string-array name="prefix_options">
+        <item>+34</item>
+        <item>+68</item>
+        <item>+48</item>
+    </string-array>
+</resources>

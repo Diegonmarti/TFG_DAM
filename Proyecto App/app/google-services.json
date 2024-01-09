@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "796763331783",
+    "project_id": "perruna-cd211",
+    "storage_bucket": "perruna-cd211.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796763331783:android:5a415273c85c31ab66b2e2",
+        "android_client_info": {
+          "package_name": "com.example.proyecto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796763331783-78ps5cfmvencc7ua739snh9jjr9o7mfj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT9Hj790WvOYbOrzl8ICaXTQySGwsnBsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796763331783-78ps5cfmvencc7ua739snh9jjr9o7mfj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

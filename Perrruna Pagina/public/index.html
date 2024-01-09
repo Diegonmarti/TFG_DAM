@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="../inicio/pagina.css" />
+  <title>Menu y Contenido</title>
+  <!-- Resto de tu código... -->
+</head>
+<body>
+  <div class="hamburger">
+    <div class="_layer -top"></div>
+    <div class="_layer -mid"></div>
+    <div class="_layer -bottom"></div>
+  </div>
+  <nav class="menuppal">
+    <ul>
+      <li><a href="../inicio/pagina.html">Inicio</a></li>
+      <li><a href="../login/Login.html">Login</a></li>
+      <li><a href="../cuidadores/cuidadores.html">Cuidadores</a></li>
+      <li><a href="../servicios/servicios.html">Servicios</a></li>
+      <li><a href="../ubicacion/mapa.html">Ubicacion</a></li>
+      <li><a href="../contacto/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+  <div class="food-menu">
+    <video onloadedmetadata="this.muted = true" muted autoplay>
+      <source src="../fotos/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <script>
+      const video = document.querySelector('video');
+      video.addEventListener('ended', () => {
+        window.location.replace('../login/Login.html');
+      });
+    </script>
+  </div>
+  <style>
+    section {
+      margin-bottom: 400px;
+    }
+    
+    /* Estilos para dispositivos móviles */
+    @media only screen and (max-width: 600px) {
+      /* Ajusta el tamaño de la hamburguesa */
+      .hamburger {
+        width: 40px;
+        height: 30px;
+      }
+      
+      /* Ajusta el tamaño del menú */
+      .menuppal {
+        font-size: 14px;
+      }
+      
+      /* Ajusta el tamaño del video */
+      .food-menu video {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+  <script src="../inicio/pagina.js"></script>
+</body>
+</html>
